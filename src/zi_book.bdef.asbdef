@@ -1,4 +1,4 @@
-managed; // implementation in class zbp_i_book unique;
+managed implementation in class zbp_i_book unique;
 // strict ( 2 );
 
 define behavior for ZI_BOOK //alias <alias_name>
@@ -7,6 +7,7 @@ lock master
 //authorization master ( instance )
 //etag master <field_name>
 {
+//  read;
   create;
   update;
   delete;

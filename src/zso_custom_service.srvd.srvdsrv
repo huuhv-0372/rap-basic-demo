@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for Sales Order'
+define service ZSO_CUSTOM_SERVICE {
+  expose ZI_CUSTOM_SALESORDER as SalesOrder;
+}

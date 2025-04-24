@@ -1,0 +1,33 @@
+@Metadata.layer: #CORE
+
+@UI: {
+  headerInfo: { typeName: 'Sales Order',
+                typeNamePlural: 'Sale_Order',
+                title: { type: #STANDARD, label: 'Sales Order', value: 'Sale_Order' } }
+              }
+annotate view ZI_SALEORDER
+  with 
+{
+  @UI.facet: [ { id:              'SalesOrder',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'SalesOrder',
+                 position:        10 } ]
+ @UI: {  lineItem:       [ { position: 10 } ],
+         identification: [ { position: 10 } ],
+         selectionField: [ { position: 10 } ] }
+ Sale_Order;
+ @UI: {  lineItem:       [ { position: 40 } ],
+         identification: [ { position: 40 } ],
+         selectionField: [ { position: 40 } ] }
+Custom_Name;
+ @UI: {  lineItem:       [ { position: 60 } ] ,
+         identification: [ { position: 60 } ]}
+Total_Amount;
+ @UI: {  lineItem:       [ { position: 70 } ] ,
+         identification: [ { position: 70 } ]}
+Currency;
+ @UI: {  lineItem:       [ { position: 75 } ] ,
+         identification: [ { position: 75 } ]}
+Last_Changed_At;
+}

@@ -23,7 +23,7 @@ CLASS zjh_book_data IMPLEMENTATION.
             flight_price      AS flight_price,
             currency_code     AS currency_code
          ORDER BY booking_id
-         UP TO 10 ROWS ).
+         UP TO 100 ROWS ).
 
     COMMIT WORK.
     out->write( 'Booking data inserted'  ).
