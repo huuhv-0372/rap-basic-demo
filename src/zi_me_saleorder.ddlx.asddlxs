@@ -3,9 +3,9 @@
 @UI: {
   headerInfo: { typeName: 'Sales Order',
                 typeNamePlural: 'Sale_Order',
-                title: { type: #STANDARD, label: 'Sales Order', value: 'Sale_Order' } }
+                title: { type: #STANDARD, label: 'Sales Order', value: 'SalesOrder' } }
               }
-annotate view ZI_SALEORDER
+annotate view ZI_SALESORDER
   with 
 {
   @UI.facet: [ { id:              'SalesOrder',
@@ -16,18 +16,18 @@ annotate view ZI_SALEORDER
  @UI: {  lineItem:       [ { position: 10 } ],
          identification: [ { position: 10 } ],
          selectionField: [ { position: 10 } ] }
- Sale_Order;
+SalesOrder;
  @UI: {  lineItem:       [ { position: 40 } ],
          identification: [ { position: 40 } ],
          selectionField: [ { position: 40 } ] }
-Custom_Name;
+CustomerName;
  @UI: {  lineItem:       [ { position: 60 } ] ,
          identification: [ { position: 60 } ]}
-Total_Amount;
+TotalAmount;
  @UI: {  lineItem:       [ { position: 70 } ] ,
          identification: [ { position: 70 } ]}
 Currency;
  @UI: {  lineItem:       [ { position: 75 } ] ,
          identification: [ { position: 75 } ]}
-Last_Changed_At;
+LastChangedAt;
 }
