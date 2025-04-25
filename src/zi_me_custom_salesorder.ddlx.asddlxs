@@ -1,0 +1,27 @@
+@Metadata.layer: #CORE
+annotate entity ZI_CUSTOM_SALESORDER
+  with 
+{
+  @UI.facet: [ { id:              'CustomSalesOrder',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'Custom Sales Order',
+                 position:        10 } ]
+ @UI: {  lineItem:       [ { position: 10 } ],
+         identification: [ { position: 10 } ],
+         selectionField: [ { position: 10 } ] }
+sales_order;
+ @UI: {  lineItem:       [ { position: 40 } ],
+         identification: [ { position: 40 } ],
+         selectionField: [ { position: 40 } ] }
+customer_name;
+ @UI: {  lineItem:       [ { position: 60 } ] ,
+         identification: [ { position: 60 } ]}
+total_amount;
+ @UI: {  lineItem:       [ { position: 70 } ] ,
+         identification: [ { position: 70 } ]}
+currency;
+ @UI: {  lineItem:       [ { position: 75 } ] ,
+         identification: [ { position: 75 } ]}
+last_changed_at;
+}

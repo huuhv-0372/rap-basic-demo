@@ -1,0 +1,14 @@
+unmanaged implementation in class zbp_i_unmanaged_salesorder unique;
+strict ( 2 );
+
+define behavior for ZI_UNMANAGED_SALESORDER alias UN_SALESORDER
+lock master
+//late numbering
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Sales_Order;
+}

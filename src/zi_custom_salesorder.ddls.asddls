@@ -1,5 +1,6 @@
 @EndUserText.label: 'Custom Sales Order Query'
-@ObjectModel.query.implementedBy:'ABAP:ZCL_SALESORDER_QUERY' 
+@ObjectModel.query.implementedBy:'ABAP:ZCL_SALESORDER_QUERY'
+@Metadata.allowExtensions: true
 
 define custom entity ZI_CUSTOM_SALESORDER {
   key sales_order     : abap.char(10);

@@ -1,4 +1,4 @@
 @EndUserText.label: 'Service definition for Sales Order'
 define service ZUI_SALEORDER {
-  expose ZI_SALEORDER;
+  expose ZI_SALESORDER;
 }

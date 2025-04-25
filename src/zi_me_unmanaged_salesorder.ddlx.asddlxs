@@ -1,33 +1,27 @@
 @Metadata.layer: #CORE
-
-@UI: {
-  headerInfo: { typeName: 'Sales Order',
-                typeNamePlural: 'Sale_Order',
-                title: { type: #STANDARD, label: 'Sales Order', value: 'SalesOrder' } }
-              }
-annotate view ZI_SALESORDER
+annotate entity ZI_UNMANAGED_SALESORDER
   with 
 {
-  @UI.facet: [ { id:              'SalesOrder',
+  @UI.facet: [ { id:              'UnManagedSalesOrder',
                  purpose:         #STANDARD,
                  type:            #IDENTIFICATION_REFERENCE,
-                 label:           'SalesOrder',
+                 label:           'Unmanaged Sales Order',
                  position:        10 } ]
  @UI: {  lineItem:       [ { position: 10 } ],
          identification: [ { position: 10 } ],
          selectionField: [ { position: 10 } ] }
-SalesOrder;
+Sales_Order;
  @UI: {  lineItem:       [ { position: 40 } ],
          identification: [ { position: 40 } ],
          selectionField: [ { position: 40 } ] }
-CustomerName;
+Customer_Name;
  @UI: {  lineItem:       [ { position: 60 } ] ,
          identification: [ { position: 60 } ]}
-TotalAmount;
+Total_Amount;
  @UI: {  lineItem:       [ { position: 70 } ] ,
          identification: [ { position: 70 } ]}
 Currency;
  @UI: {  lineItem:       [ { position: 75 } ] ,
          identification: [ { position: 75 } ]}
-LastChangedAt;
+Last_Changed_At;
 }

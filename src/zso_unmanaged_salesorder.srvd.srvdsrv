@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service define for Sales Order Unmanaged'
+define service ZSO_UNMANAGED_SALESORDER {
+  expose ZI_UNMANAGED_SALESORDER as UnManagedSalesOrder;
+}

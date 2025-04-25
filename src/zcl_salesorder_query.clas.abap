@@ -39,7 +39,7 @@ CLASS zcl_salesorder_query IMPLEMENTATION.
     " Execute query
     SELECT sales_order, customer_name, total_amount, currency, last_changed_at
       FROM zjh_saleorder
-      WHERE (lv_sql_filter)
+      WHERE (lv_sql_filter) AND total_amount > 1000
       ORDER BY (lv_sort_string)
       INTO TABLE @lt_result
       OFFSET @lv_offset UP TO @lv_max_rows ROWS.

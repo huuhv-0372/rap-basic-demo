@@ -4,8 +4,8 @@
   <asx:values>
    <DDLX>
     <METADATA>
-     <NAME>ZI_ME_SALEORDER</NAME>
-     <DESCRIPTION>Metadata Extension for SalesOrder</DESCRIPTION>
+     <NAME>ZI_ME_CUSTOM_SALESORDER</NAME>
+     <DESCRIPTION>Metadata Extension for Custom SalesOrder</DESCRIPTION>
      <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
     </METADATA>
    </DDLX>
