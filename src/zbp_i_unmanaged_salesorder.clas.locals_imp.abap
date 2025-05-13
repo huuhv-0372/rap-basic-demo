@@ -33,15 +33,18 @@ CLASS lhc_ZI_UNMANAGED_SALESORDER IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD delete.
+*    SELECT sales_order, customer_name, total_amount, currency, last_changed_at
+*      FROM zjh_saleorder
+*      WHERE sales_order = 'TEST01' "AND total_amount > 1000
+*      INTO TABLE @DATA(lt_result).
   ENDMETHOD.
 
   METHOD read.
-    SELECT sales_order, customer_name, total_amount, currency
-      FROM zjh_saleorder
-      FOR ALL ENTRIES IN @keys
-      WHERE sales_order = @keys-Sales_Order
-      INTO TABLE @DATA(lt_result).
-*    result = lt_result.
+*    SELECT sales_order, customer_name, total_amount, currency, last_changed_at
+*      FROM zjh_saleorder
+*      FOR ALL ENTRIES IN @keys
+*      WHERE sales_order = @keys-Sales_Order AND total_amount > 1000
+*      INTO TABLE @result.
   ENDMETHOD.
 
   METHOD lock.

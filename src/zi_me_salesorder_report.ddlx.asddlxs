@@ -1,5 +1,5 @@
 @Metadata.layer: #CORE
-annotate entity ZI_CUSTOM_SALESORDER
+annotate entity ZI_SALESORDER_REPORT
   with 
 {
   @UI.facet: [ { id:              'CustomSalesOrder',
@@ -12,18 +12,21 @@ annotate entity ZI_CUSTOM_SALESORDER
          selectionField: [ { position: 10 } ]}
   @EndUserText: { label:  'Sales Order', 
     quickInfo: 'Sales Order for Custom' }
-  sales_order;
+  salesorder;
   @UI: {  lineItem:       [ { position: 40 } ],
           identification: [ { position: 40 } ],
           selectionField: [ { position: 40 } ]}
-  customer_name;
+  customername;
   @UI: {  lineItem:       [ { position: 60 } ],
           identification: [ { position: 60 } ]}
-  total_amount;
+  totalamount;
   @UI: {  lineItem:       [ { position: 70 } ],
           identification: [ { position: 70 } ]}
   currency;
   @UI: {  lineItem:       [ { position: 75 } ],
           identification: [ { position: 75 } ]}
+  category;
+  @UI: {  lineItem:       [ { position: 85 } ],
+          identification: [ { position: 85 } ]}
   last_changed_at;
 }

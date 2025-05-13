@@ -1,0 +1,4 @@
+@EndUserText.label: 'Use for Custom Query'
+define service ZSO_REPORT_SERVICE {
+  expose ZI_SALESORDER_REPORT as SalesOrderReport;
+}

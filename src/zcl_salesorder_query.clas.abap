@@ -15,14 +15,14 @@ CLASS zcl_salesorder_query IMPLEMENTATION.
     " Get parameter Query from request
     DATA(lv_sql_filter) = io_request->get_filter( )->get_as_sql_string( ).
 
-    DATA(lv_search_string) = io_request->get_search_expression( ).
-    DATA(lv_search_sql) = |customer_name LIKE '%{ cl_abap_dyn_prg=>escape_quotes( lv_search_string ) }%'|.
-
-    IF lv_sql_filter IS INITIAL.
-      lv_sql_filter = lv_search_sql.
-    ELSE.
-      lv_sql_filter = |( { lv_sql_filter } AND { lv_search_sql } )|.
-    ENDIF.
+*    DATA(lv_search_string) = io_request->get_search_expression( ).
+*    DATA(lv_search_sql) = |customer_name LIKE '%{ cl_abap_dyn_prg=>escape_quotes( lv_search_string ) }%'|.
+*
+*    IF lv_sql_filter IS INITIAL.
+*      lv_sql_filter = lv_search_sql.
+*    ELSE.
+*      lv_sql_filter = |( { lv_sql_filter } AND { lv_search_sql } )|.
+*    ENDIF.
 
     DATA(lt_sort)    = io_request->get_sort_elements( ).
     DATA(lt_sort_criteria) = VALUE string_table( FOR ls_sort IN lt_sort

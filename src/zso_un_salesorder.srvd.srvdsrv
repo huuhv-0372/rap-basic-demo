@@ -1,0 +1,4 @@
+@EndUserText.label: 'Use for Unmanaged Query'
+define service ZSO_UN_SALESORDER {
+  expose ZI_UN_SALESORDER as UnSalesOrder;
+}
